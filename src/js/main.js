@@ -17,7 +17,7 @@ var jeopardyGame = (function() {
     function getJeopardy() {
         $.ajax({
             'method': 'GET',
-            'url': 'http://jservice.io/api/random',
+            'url': 'https://jservice.io/api/random',
             'dataType': 'json',
             'success': function(data) {
                 var newData = data[0];
