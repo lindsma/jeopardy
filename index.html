@@ -1,14 +1,56 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <title></title>
-  <link rel="stylesheet" href="lib/styles/main.min.css">
+    <title>Jeopardy</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link rel="stylesheet" href="lib/styles/main.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
+    <!-- Content goes here -->
+    <header>
+    </header>
+    <main>
+        <div class='container'>
+        </div>
+    </main>
+    <!-- Handlebars templates -->
+    <script id='question-template' type='text/x-handlebars-template'>
+        <div class='question-container'>
+            <div class='jeopardy-block'>
+                <ul class='items'>
+                    <li>
+                        <h3 class='category'>{{category}}</h3></li>
+                    <li>
+                        <p class='question'>{{question}}</p>
+                    </li>
+                    <li>
+                        <p class='value'>{{value}}</p>
+                    </li>
+                </ul>
+                <div class='input-container'>
+                    <form>
+                        <input class='user-guess' type='textbox' placeholder='What is...'>
+                        <button class='guess-btn'>Guess</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </script>
 
-<!-- Content goes here -->
-
-
-<script src="lib/js/main.min.js"></script>
+    <footer>
+        <img class='alex-trebek' src='images/alex_trebek.jpg' alt='alex trebek drawing' />
+        <div class='btn-container'><button class='play-btn'>Play Jeopardy!</button></div>
+        <ul class='standings'>
+            <li class='standings-title'>Your Standings</li>
+            <li>Score: <p class='update-score'></p></li>
+            <li>Right Answers: </li>
+            <li>Wrong Answers: </li>
+        </ul>
+    </footer>
+    <script src="lib/js/main.min.js"></script>
 </body>
+
 </html>

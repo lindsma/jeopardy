@@ -1,0 +1,13 @@
+@import 'partials/reset';
+@import 'partials/variables';
+// @import 'partials/mixins';
+@import 'partials/content';
+@import 'partials/question-handlebar';
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
