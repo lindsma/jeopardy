@@ -69,6 +69,7 @@ var jeopardyGame = (function() {
         $('.jeopardy-block').css({
             'backgroundColor': '#55AE3A',
         }).fadeOut(1000, function() {
+          $('.container').empty();
             getJeopardy();
         });
     };
